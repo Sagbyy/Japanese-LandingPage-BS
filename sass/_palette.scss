@@ -1,0 +1,27 @@
+$dark-1: #3D3A4b;
+$beige: #eeebd0;
+$main-red: #c70a0a;
+$shape-red-1: #c33838;
+$shape-red-2: #ebb3a9;
+$shape-red-3: #e87ea1;
+
+$custom-theme-colors: (
+    "main-red": $main-red,
+    "shape-red-1": $shape-red-1,
+    "shape-red-2": $shape-red-2,
+    "shape-red-3": $shape-red-3,
+    "beige": $beige,
+    "dark-1": $dark-1
+);
+
+$theme-colors: map.merge($custom-theme-colors, $theme-colors);
+
+@each $key, $val in $custom-theme-colors {
+    .bg-#{$key} {
+        background-color: $val;
+    }
+
+    .text-#{$key} {
+        color: $val;
+    }
+}

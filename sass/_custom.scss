@@ -1,0 +1,51 @@
+// Global
+
+$font-family-base: Montserrat, sans-serif;
+
+.playfair-font {
+    font-family: "Playfair Display", serif;
+}
+
+.global-container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+// Page 1
+
+.main-nav a {
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: #f1f1f1;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out;    
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+    }
+}
+
+.home-height {
+    padding-bottom: 20vw;
+}
+
+.sushi {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 60%;
+    transform: translate(0, -50%);
+}
+
+
+
+
+
