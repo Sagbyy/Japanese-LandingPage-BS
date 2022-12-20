@@ -1,7 +1,5 @@
 // Global
 
-$font-family-base: Montserrat, sans-serif;
-
 .playfair-font {
     font-family: "Playfair Display", serif;
 }
@@ -37,6 +35,8 @@ $font-family-base: Montserrat, sans-serif;
     padding-bottom: 20vw;
 }
 
+// Sushi
+
 .sushi {
     position: absolute;
     right: 0;
@@ -44,6 +44,32 @@ $font-family-base: Montserrat, sans-serif;
     width: 60%;
     transform: translate(0, -50%);
 }
+
+@media screen and (max-width: 992px) {
+    .sushi {
+        transform: translate(0, -20%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sushi {
+        transform: translate(0, 10%);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sushi {
+        display: none;
+    }
+}
+
+// Chef
+
+.img-chef {
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
 
 
 

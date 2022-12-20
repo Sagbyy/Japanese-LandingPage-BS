@@ -86,6 +86,26 @@
   transform: translate(0, -50%);
 }
 
+@media screen and (max-width: 992px) {
+  .sushi {
+    transform: translate(0, -20%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .sushi {
+    transform: translate(0, 10%);
+  }
+}
+@media screen and (max-width: 576px) {
+  .sushi {
+    display: none;
+  }
+}
+.img-chef {
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -7764,6 +7784,18 @@ textarea.form-control-lg {
 
 .h-auto {
   height: auto !important;
+}
+
+.h-300 {
+  height: 300px !important;
+}
+
+.h-400 {
+  height: 400px !important;
+}
+
+.h-750 {
+  height: 750px !important;
 }
 
 .mh-100 {

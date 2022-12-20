@@ -1,0 +1,15 @@
+
+$utilities: map-merge(
+    $utilities,
+    (
+        "height": map-merge(
+            map-get($utilities, "height"),
+            (
+                values: map-merge(
+                    map-get(map-get($utilities, "height"), "values"),
+                    (300: 300px, 400: 400px, 750: 750px)
+                ),
+            ),
+        ),
+    ) 
+);
