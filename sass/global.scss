@@ -6,10 +6,10 @@
 @import "../node_modules/bootstrap/scss/utilities";
 
 
-@import "./utilities";
-@import "./components";
 @import "./palette";
 @import "./custom";
+@import "./utilities";
+@import "./components";
 
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

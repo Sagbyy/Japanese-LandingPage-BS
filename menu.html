@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Chief Place</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/cleaned/menu.css" />
+  </head>
+  <body class="global-container bg-beige d-flex flex-column h-100 text-light">
+
+
+    <!-- Navigation -->
+    <nav class="bg-dark d-flex justify-content-center py-3 main-nav">
+      <a class="text-light text-uppercase text-decoration-none" href="index.html">Home</a>
+      <a class="text-light text-uppercase text-decoration-none ms-3" href="menu.html">Menu</a>
+      <a class="text-light text-uppercase text-decoration-none ms-3" href="reservation.html">Reservation</a>
+    </nav>
+
+    <!-- Home -->
+    <div class="container position-relative flex-grow-1 flex-shrink-0 py-4">
+        <div class="text-center text-dark-1">
+            <p class="mb-0">Only Fresh And Quality Products</p>
+            <h2 class="display-5 playfair-font">Our Two Menus</h2>
+            <p>Choose your favorite</p>
+        </div>
+        <!-- Accordion -->
+        <div class="accordion" id="accordion-parent">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="accord1">
+                    <button class="accordion-button fs-3 p-4"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse1"
+                            aria-expanded="true"
+                            aria-controls="#collapse1">
+                        <span class="playfair-font fs-2">Sea Delight &nbsp;-</span><span class="fs-3 pt-1">&nbsp;&nbsp;135$</span>
+                    </button>
+                </h2>
+
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="accord1" data-bs-parent="#accordion-parent">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between p-4">
+                            <span class="fs-5">High Quality Salmon Sushi</span>
+                            <span class="fs-4">40$</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-4">
+                            <span class="fs-5"> Heaven Sashimi, raw fresh salmon meat.</span>
+                            <span class="fs-4">30$</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-4">
+                            <span class="fs-5">Shioyaki Sakana, salt-grilled fish.</span>
+                            <span class="fs-4">25$</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-4">
+                            <span class="fs-5"> Katsuo-no-Tataki, lightly broiled, sliced bonito.</span>
+                            <span class="fs-4">25$</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-4">
+                            <span class="fs-5"> Nanban-zuke, Marinated Fried Salmon.</span>
+                            <span class="fs-4">15$</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="accord2">
+                    <button class="accordion-button fs-3 p-4 outline"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse2"
+                            aria-expanded="true"
+                            aria-controls="#collapse2">
+                        <span class="playfair-font fs-2">Meat Heaven &nbsp;-</span><span class="fs-3 pt-1">&nbsp;&nbsp;140$</span>
+                    </button>
+                </h2>
+    
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="accord1" data-bs-parent="#accordion-parent">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between p-4">
+                            <span class="fs-5">Negima yakitori, Japanese Chicken Skewers</span>
+                            <span class="fs-4">20$</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-4">
+                            <span class="fs-5">Chashu, Japanese Braised Pork Belly </span>
+                            <span class="fs-4">35$</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-4">
+                            <span class="fs-5">Sukiyaki, Japanese fondue </span>
+                            <span class="fs-4">30$</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-4">
+                            <span class="fs-5">Shabu-shabu, sliced meat and vegetables.</span>
+                            <span class="fs-4">25$</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-4">
+                            <span class="fs-5">Olive Sanuki Wagyu, high quality beef cold cuts.</span>
+                            <span class="fs-4">30$</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-4">
+      <p class="text-light text-center my-0">Copyright &copy 2022 Japan Theme, All Rights Reserved. <a class="text-light text-decoration-none" href="https://www.sagby.fr/" target="_blank">Sagby</a></p>
+    </footer>
+
+    <script src="./scripts/bootstrap.bundle.js"></script>
+  </body>
+</html>

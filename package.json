@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./sass/global.scss ./css/raw/style.css"
+    "sass": "sass --watch ./sass/global.scss ./css/raw/style.css",
+    "purgecss": "purgecss --css css/raw/style.css --content reservation.html scripts/*.js -o css/cleaned/reservation.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sagby",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "purgecss": "^5.0.0"
   }
 }

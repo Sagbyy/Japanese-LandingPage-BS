@@ -1,4 +1,5 @@
 $dark-1: #3D3A4b;
+$dark-2: #353342;
 $beige: #eeebd0;
 $main-red: #c70a0a;
 $shape-red-1: #c33838;
@@ -11,17 +12,18 @@ $custom-theme-colors: (
     "shape-red-2": $shape-red-2,
     "shape-red-3": $shape-red-3,
     "beige": $beige,
-    "dark-1": $dark-1
+    "dark-1": $dark-1,
+    "dark-2": $dark-2
 );
 
 $theme-colors: map.merge($custom-theme-colors, $theme-colors);
 
 @each $key, $val in $custom-theme-colors {
     .bg-#{$key} {
-        background-color: $val;
+        background-color: $val!important;
     }
 
     .text-#{$key} {
-        color: $val;
+        color: $val!important;
     }
 }

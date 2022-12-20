@@ -65,13 +65,17 @@
 
 // Chef
 
-.img-chef {
+.object-cover {
     object-fit: cover;
     object-position: 50% 30%;
 }
 
+@media screen and (max-width: 991px) {
+    .responsive-order-1 {
+        order: 1;
+    }
 
-
-
-
-
+    .responsive-order-2 {
+        order: 2;
+    }
+}
